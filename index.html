@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="titulo-principal">
+      <h1 class="texto-principal">New Visit Registration</h1>
+      <p>Documenting pastoral care and fellowship visits across the stake</p>
+    </header>
+    <form class="contenedor-principal">
+      <div class="contenedor-hermano1">
+        <div class="primer-nieto">
+          <h2 class="subtitulos">MEMBER INFORMATION</h2>
+          <div class="informacion-miembro">
+            <div class="nietos">
+              <label for="nombre" class="label-color"> Full name</label
+              ><input
+                type="text"
+                placeholder="  Enter member name"
+                id="nombre"
+                class="input-miembro"
+              />
+            </div>
+            <div class="nietos">
+              <label for="adress" class="label-color"> Adress</label
+              ><input
+                type="text"
+                placeholder="  Street, City, Postal code"
+                id="adress"
+                class="input-miembro"
+              />
+            </div>
+            <div class="nietos">
+              <label for="phone-number" class="label-color"> Phone number</label
+              ><input
+                type="text"
+                placeholder="  +1 (555) 000-0000"
+                id="phone-number"
+                class="input-miembro"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="segundo-nieto">
+          <h2 class="subtitulos">VISIT DETAILS</h2>
+          <div>
+            <label for="comentarios" class="label-color">Comentarios:</label>
+            <textarea
+              id="comentarios"
+              name="comentarios"
+              rows="5"
+              cols="40"
+              placeholder="Describe the visit context, needs identified, or spiritual messages shared…"
+            ></textarea>
+          </div>
+        </div>
+      </div>
+      <div class="contenedor-hermano2">
+        <div>
+          <h2 class="subtitulos">LOGISTICS</h2>
+          <div>
+            <div>
+              <label for="date" class="label-color">Date</label
+              ><input type="date" id="date" />
+            </div>
+            <div>
+              <label for="time" class="label-color">Time</label
+              ><input type="time" id="time" />
+            </div>
+          </div>
+          <div>
+            <label for="" class="label-color">Visit Status</label>
+            <select>
+              <option value="">Completed</option>
+              <option value="">Pending</option>
+              <option value="">In progress</option>
+            </select>
+          </div>
+          <div>
+            <label for="registrar-name" class="label-color"
+              >Registrar Name</label
+            ><input
+              type="text"
+              placeholder="Full name of Registrar"
+              id="registrar-name"
+            />
+          </div>
+        </div>
+        <div>
+          <div><button>Guardar Registro</button></div>
+          <p>* information is used for internal congregational support only</p>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>

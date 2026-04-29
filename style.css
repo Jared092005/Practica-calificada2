@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --color-primary: #002e5d;
+  --color-secondary: #6c757d;
+  --color-tertiary: #e9ecef;
+  --color-neutral: #f8f9fa;
+  --color-white: #ffffff;
+}
+body {
+  min-height: 100vh;
+  background-color: var(--color-neutral);
+}
+.titulo-principal {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  padding: 30px 0px 0px 30px;
+}
+.texto-principal {
+  color: var(--color-primary);
+}
+.contenedor-principal {
+  max-width: 900px;
+  height: 400px;
+  margin: 20px 0px 0px 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  background-color: var(--color-white);
+}
+.subtitulos {
+  color: var(--color-secondary);
+}
+.label-color {
+  color: var(--color-secondary);
+}
+.contenedor-hermano1 {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 30px;
+}
+.informacion-miembro {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.input-miembro {
+  height: 30px;
+  background-color: var(--color-tertiary);
+  border: none;
+  border-radius: 8px;
+  width: 350px;
+}
+.primer-nieto {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.nietos {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
