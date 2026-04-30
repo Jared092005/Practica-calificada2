@@ -233,7 +233,7 @@ body {
   flex-direction: column;
   align-items: center;
   border-radius: 8px;
-  background-color: white;
+  background-color: var(--color-neutral);
   /*   border: 1px black solid; */
 }
 .segundo-nieto2 {
