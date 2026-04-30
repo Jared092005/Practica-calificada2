@@ -34,11 +34,11 @@ body {
   margin: 20px 0px 0px 40px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  background-color: #ecececb6;
+  background-color: inherit;
   padding-top: 10px;
   padding-left: 20px;
   padding-bottom: 0px;
-  border: 1px solid black;
+  /*   border: 1px solid black; */
   gap: 20px;
 }
 .subtitulos {
@@ -55,7 +55,6 @@ body {
 .contenedor-hermano1 {
   display: flex;
   flex-direction: column;
-  /*   padding: 20px; */
   gap: 10px;
 }
 .informacion-miembro {
@@ -70,8 +69,10 @@ body {
   padding-left: 4px;
 }
 .foto-miembro {
+  padding-left: 4px;
+  padding-top: 4px;
   width: 16px;
-  height: 20px;
+  height: 16px;
 }
 .input-miembro {
   height: 30px;
@@ -81,7 +82,6 @@ body {
   width: 400px;
   font-size: 10px;
   padding-left: 8px;
-  background-color: #ecececb6;
 }
 .input-miembro1 {
   height: 30px;
@@ -91,7 +91,6 @@ body {
   width: 379px;
   font-size: 10px;
   padding-left: 8px;
-  background-color: #ecececb6;
 }
 .input-miembro1:focus {
   border-radius: 8px;
@@ -111,6 +110,7 @@ body {
   /* border: 1px solid black; */
   background-color: white;
   border-radius: 12px;
+  /*   border: black 1px solid; */
 }
 .nietos {
   display: flex;
@@ -132,16 +132,18 @@ body {
   border-radius: 12px;
   gap: 16px;
   padding-left: 4px;
+  /*  border: black 1px solid; */
 }
 .comentarios {
   display: flex;
   flex-direction: column;
   gap: 10px;
   padding-left: 4px;
+  /*   border: black 1px solid; */
 }
 .comentarios-hijo {
   background-color: var(--color-tertiary);
-  width: 350px;
+  width: 400px;
   height: 90px;
   padding: 6px;
   resize: none;
@@ -181,11 +183,10 @@ body {
 .contenedor-hermano2 {
   display: flex;
   flex-direction: column;
-  /*   border: 1px black solid; */
   border-radius: 8px;
-  gap: 12px;
-  width: 70%;
-  background-color: white;
+  gap: 10px;
+  width: 60%;
+  height: 420px;
 }
 .primer-hijo2 {
   padding-left: 16px;
@@ -193,8 +194,9 @@ body {
   display: flex;
   flex-direction: column;
   gap: 9px;
-  border: 1px black solid;
   border-radius: 8px;
+  background-color: white;
+  /*   border: black 1px solid; */
 }
 .primer-nieto2 {
   display: flex;
@@ -230,8 +232,9 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: black 1px solid;
   border-radius: 8px;
+  background-color: white;
+  /*   border: 1px black solid; */
 }
 .segundo-nieto2 {
   display: flex;
@@ -267,7 +270,9 @@ body {
 .segundo-hijo2 {
   display: flex;
   flex-direction: column;
-  height: 50%;
+  height: 45%;
+  gap: 12px;
+  /*   border: black 1px solid; */
 }
 .mapa-google {
   border-radius: 8px;
@@ -277,4 +282,29 @@ body {
 .texto-pequeno {
   font-size: 8px;
   font-family: "Public Sans", sans-serif;
+}
+
+.el-btn {
+  display: flex;
+  width: 100%;
+
+  padding-top: 8px;
+  height: 20%;
+}
+
+.btn-guardado {
+  width: 100%;
+  border: none;
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  border-radius: 8px;
+  background-color: var(--color-primary);
+  color: white;
+}
+
+.foto-disco {
+  width: 12px;
 }
