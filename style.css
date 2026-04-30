@@ -303,8 +303,13 @@ body {
   border-radius: 8px;
   background-color: var(--color-primary);
   color: white;
+  transition: 0.3s;
 }
 
 .foto-disco {
   width: 12px;
+}
+
+.btn-guardado:hover {
+  background-color: #0c63bbee;
 }
