@@ -4,21 +4,38 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
     <title>Document</title>
   </head>
   <body>
     <header class="titulo-principal">
       <h1 class="texto-principal">New Visit Registration</h1>
-      <p>Documenting pastoral care and fellowship visits across the stake</p>
+      <p class="texto">
+        Documenting pastoral care and fellowship visits across the stake
+      </p>
     </header>
     <form class="contenedor-principal">
       <div class="contenedor-hermano1">
         <div class="primer-nieto">
-          <h2 class="subtitulos">MEMBER INFORMATION</h2>
+          <div class="miembro-img">
+            <img
+              src="./imagenes/hogar.png"
+              alt="miembro"
+              class="foto-miembro"
+            />
+            <h2 class="subtitulos">MEMBER INFORMATION</h2>
+          </div>
+
           <div class="informacion-miembro">
             <div class="nietos">
-              <label for="nombre" class="label-color"> Full name</label
-              ><input
+              <label for="nombre" class="label-color"> Full name</label>
+              <input
                 type="text"
                 placeholder="  Enter member name"
                 id="nombre"
@@ -26,43 +43,58 @@
               />
             </div>
             <div class="nietos">
-              <label for="adress" class="label-color"> Adress</label
-              ><input
-                type="text"
-                placeholder="  Street, City, Postal code"
-                id="adress"
-                class="input-miembro"
-              />
+              <label for="nombre" class="label-color"> Adress</label>
+              <section class="select-div1">
+                <div class="select-image">
+                  <img src="./imagenes/hogar.png" alt="mapa" class="img" />
+                </div>
+                <input
+                  type="text"
+                  placeholder="Street, City, Postal code"
+                  id="nombre"
+                  class="input-miembro1"
+                />
+              </section>
             </div>
             <div class="nietos">
-              <label for="phone-number" class="label-color"> Phone number</label
-              ><input
-                type="text"
-                placeholder="  +1 (555) 000-0000"
-                id="phone-number"
-                class="input-miembro"
-              />
+              <label for="nombre" class="label-color"> Phone number</label>
+              <section class="select-div1">
+                <div class="select-image">
+                  <img
+                    src="./imagenes/llamada-telefonica.png"
+                    alt="phone-number"
+                    class="img"
+                  />
+                </div>
+                <input
+                  type="text"
+                  placeholder="+1 (555) 000-0000"
+                  id="nombre"
+                  class="input-miembro1"
+                />
+              </section>
             </div>
           </div>
         </div>
         <div class="segundo-nieto">
           <h2 class="subtitulos">VISIT DETAILS</h2>
-          <div>
+          <div class="comentarios">
             <label for="comentarios" class="label-color">Comentarios:</label>
             <textarea
               id="comentarios"
               name="comentarios"
               rows="5"
               cols="40"
+              class="comentarios-hijo"
               placeholder="Describe the visit context, needs identified, or spiritual messages shared…"
             ></textarea>
           </div>
         </div>
       </div>
       <div class="contenedor-hermano2">
-        <div>
+        <div class="primer-hijo2">
           <h2 class="subtitulos">LOGISTICS</h2>
-          <div>
+          <div class="primer-nieto2">
             <div>
               <label for="date" class="label-color">Date</label
               ><input type="date" id="date" />
@@ -91,7 +123,7 @@
           </div>
         </div>
         <div>
-          <div><button>Guardar Registro</button></div>
+          <div class="segundo-hijo2"><button>Guardar Registro</button></div>
           <p>* information is used for internal congregational support only</p>
         </div>
       </div>
